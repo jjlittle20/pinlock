@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pinstyles.css" />
+    <script src="pinapp.js"></script>
+    <title>Pin Code Lock</title>
+  </head>
+  <body>
+    <div id="background" class="background">
+      <div class="pinlock">
+        <div id="code-screen" class="code-screen"><h1 id="code-num"></h1></div>
+        <div class="pin-pad">
+          <button id="button-one" onclick="addNumToList(1)">1</button>
+          <button id="button-two" onclick="addNumToList(2)">2</button>
+          <button id="button-three" onclick="addNumToList(3)">3</button>
+          <button id="button-four" onclick="addNumToList(4)">4</button>
+          <button id="button-five" onclick="addNumToList(5)">5</button>
+          <button id="button-six" onclick="addNumToList(6)">6</button>
+          <button id="button-seven" onclick="addNumToList(7)">7</button>
+          <button id="button-eight" onclick="addNumToList(8)">8</button>
+          <button id="button-nine" onclick="addNumToList(9)">9</button>
+          <button id="button-delete" onclick="removeLastNumInList()">
+            Del
+          </button>
+          <button id="button-zero" onclick="addNumToList(0)">0</button>
+          <button id="button-unlock" onclick="unlockPinCode()">Unlock</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

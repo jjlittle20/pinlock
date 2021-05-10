@@ -1,0 +1,55 @@
+.background {
+  margin: -9px;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: rgb(26, 30, 78);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.pinlock {
+  height: 80vh;
+  width: 80vw;
+  background: rgba(147, 183, 213, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(89, 94, 163, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1fr;
+}
+.code-screen {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: rgb(154, 200, 218);
+  border-radius: 10px;
+  background: none;
+}
+.pin-pad {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+button {
+  margin: 3px;
+  background: rgba(147, 183, 213, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(89, 94, 163, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(154, 200, 218);
+}
+@media only screen and (min-width: 768px) {
+  .pinlock {
+    width: 30vw;
+  }
+}
